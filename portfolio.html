@@ -6,6 +6,53 @@
   <title>Portfolio | Samson Marikwa</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <style>
+    body {
+      width: 100%;
+    }
+
+    .flex-container {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: center;
+      background-color: DodgerBlue;
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      width: 40%;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+
+    #connect {
+      display: inline;
+      background-color: #ffffff;
+      width: 100%;
+      float: left;
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }
+
+    #third {
+      clear: both;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 640px) {
+
+      .flex-container>div {
+        background-color: #f1f1f1;
+        width: 100%;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -22,52 +69,76 @@
         </nav>
       </div>
     </header>
-  
-  
-  <div>
-    <section id="about-me-section">
-    <header class="about-me-row">
-      <h1>Portfolio</h1>
-    </header>
-
     <div>
+      <header class="about-me-row">
+        <h1>Portfolio</h1>
+      </header>
+    </div>
+
+
+    <!-- Photo Grid -->
+    <div class="flex-container">
       <div>
-      <img src="assets/images/technics-q-c-640-480-1.jpg" height="200px" width="250px" alt="hangman">
+        <img src="assets/images/technics-q-c-640-480-1.jpg" width="100%" alt="hangman">
 
-      <h3>Hangman</h3>
-    </div>
-    <div>
-      <img src="assets/images/technics-q-c-640-480-2.jpg" height="200px" width="250px"  alt="RPG Game">
+        <h3>Hangman</h3>
+      </div>
+      <div>
+        <img src="assets/images/technics-q-c-640-480-2.jpg" width="100%" alt="RPG Game">
 
-      <h3>RPG Game</h3>
-    </div>
+        <h3>RPG Game</h3>
+      </div>
+
+      <div>
+        <img src="assets/images/technics-q-c-640-480-5.jpg" width="100%" alt="Trivia Game">
+
+        <h3>Trivia Game</h3>
+      </div>
+      <div>
+
+        <img src="assets/images/technics-q-c-640-480-7.jpg" width="100%" alt="Rutgers Info Widget">
+
+        <h3>Rutgers Info Widget</h3>
+      </div>
+      <div>
+        <img src="assets/images/technics-q-c-640-480-9.jpg" width="100%" alt="Rock Paper Scissors">
+
+        <h3>Rock Paper Scissors</h3>
+
+      </div>
+      <div>
+
+      </div>
+
     </div>
 
-    <div>
-      <img src="assets/images/technics-q-c-640-480-5.jpg" height="200px" width="250px"  alt="Trivia Game">
 
-      <h3>Trivia Game</h3>
-    </div>
-    <div>
-      <img src="assets/images/technics-q-c-640-480-7.jpg" height="200px" width="250px"  alt="Rutgers Info Widget">
 
-      <h3>Rutgers Info Widget</h3>
-    </div>
-    <div>
-      <img src="assets/images/technics-q-c-640-480-9.jpg"  height="200px" width="250px" alt="Rock Paper Scissors">
+    <div id="connect">
+      <!-- Connect with me block with nested rows-->
+      <header id="hdr-connect">
+        <h4>Connect with Me</h4>
+      </header>
+      <a href="https://github.com/samsonmarikwa">
+        <img src="assets/images/github.jpg" alt="github" padding="0" border="0" width="50" height="50">
+      </a>
+      <a href="https://www.linkedin.com/in/samson-marikwa-b6729219/">
+        <img src="assets/images/Linked-in.jpg" alt="Linked-in" padding="0" border="0" width="50" height="50">
+      </a>
+      <a href="https://stackoverflow.com/users/9297340/samson-marikwa?tab=profile">
+        <img src="assets/images/Stackoverflow.jpg" alt="Stack Overflow" padding="0" border="0" width="50" height="50">
+      </a>
 
-      <h3>Rock Paper Scissors</h3>
     </div>
-    </section>
 
 
   </div>
 
-  <footer>
-    <div class="footer-row">
-      Copyright &copy Samson Marikwa 2018;
+  <div id="third">
+      <footer>
+        <p>Copyright &copy Samson Marikwa 2018</p>
+      </footer>
     </div>
-  </footer>
 </body>
 
 </html>
